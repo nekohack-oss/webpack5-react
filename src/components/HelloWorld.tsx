@@ -1,7 +1,7 @@
-import React from 'react'
+import { useState } from 'react'
 
 const HelloWorld = ({ msg }: { msg: string }) => {
-    const [count, setCount] = React.useState<number>(0)
+    const [count, setCount] = useState<number>(0)
     const increment = (val: number) => {
         setCount(val + 1)
     }
