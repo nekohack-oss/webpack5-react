@@ -33,7 +33,7 @@ module.exports = {
             },
             {
                 test: /\.(jpe?g|gif|png|svg)$/i,
-                type: 'asset/resource'
+                type: 'asset/resource',
             },
         ],
     },
@@ -55,10 +55,10 @@ module.exports = {
         new ForkTsCheckerWebpackPlugin(),
     ],
     cache: {
-      type: 'filesystem',
-      buildDependencies: {
-        config: [__filename]
-      }
+        type: 'filesystem',
+        buildDependencies: {
+            config: [__filename],
+        },
     },
     devServer: {
         contentBase: __dirname + '/public',
